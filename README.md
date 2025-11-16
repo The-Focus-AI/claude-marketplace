@@ -6,39 +6,42 @@ Skills and integration documentation repository for Focus.AI - building agentic 
 
 This repository contains reference documentation, brand assets, and implementation patterns for the Focus.AI platform ecosystem.
 
-## Contents
+## Skills
 
-### Distill Backend Service Specification
-[distill-backend-service.md](distill-backend-service.md)
+Each skill provides a `SKILL.md` with front matter (name, description) and implementation guidance, plus a `REFERENCE.md` with complete specifications.
 
-A comprehensive microservices framework for building AI-powered content aggregation services. Key features:
-- Distributed architecture for collecting content from multiple platforms (Twitter/X, Email, GitHub, YouTube, etc.)
-- AI-native self-documentation for LLM integration
-- Standard API patterns for service discovery, health checks, and data synchronization
+### Distill Backend Service
+[distill-backend-service/](distill-backend-service/)
+
+Build microservices for AI-powered content aggregation:
+- **[SKILL.md](distill-backend-service/SKILL.md)** - Quick start guide and patterns
+- **[REFERENCE.md](distill-backend-service/REFERENCE.md)** - Full framework specification
+- Watch/unwatch user lifecycle management
+- Standard API patterns for service discovery
+- AI-generated summaries and feeds
 - JWT-based authentication via Clerk
-- Explicit user lifecycle management (watch/unwatch patterns)
 
-### Focus Account Integration Guide
-[focus-account-integration.md](focus-account-integration.md)
+### Focus Account Integration
+[focus-account-integration/](focus-account-integration/)
 
-Integration patterns for connecting applications to the Focus API. Includes:
+Connect applications to the Focus API:
+- **[SKILL.md](focus-account-integration/SKILL.md)** - Integration quick start
+- **[REFERENCE.md](focus-account-integration/REFERENCE.md)** - Complete API guide
 - Authentication methods (PAT, Clerk JWT, browser cookies)
 - Wallet and credit management
 - Job creation, completion, and failure workflows
 - Device-code flow for CLI applications
-- Error handling patterns
 
 ### Focus.AI Brand System
 [focus-ai-brand/](focus-ai-brand/)
 
-Complete brand identity system with assets and guidelines:
-- **[SKILL.md](focus-ai-brand/SKILL.md)** - Comprehensive style guide covering colors, typography, layout, and components
-- **Color Palette** - Paper, Ink, Graphite, Petrol, Vermilion with tinted background variants
-- **Typography** - CinaGEO (primary), 00HypertextMono (code), GhostlyGothic (display)
+Complete brand identity system:
+- **[SKILL.md](focus-ai-brand/SKILL.md)** - Style guide with colors, typography, layout
+- **Color Palette** - Paper, Ink, Graphite, Petrol, Vermilion
+- **Typography** - CinaGEO, 00HypertextMono, GhostlyGothic
 - **Layout** - Asymmetric three-column grid system
-- **Assets** - Font files and HTML reference implementations
+- **Assets** - Font files and HTML examples
 
-#### Brand Assets
 ```
 focus-ai-brand/assets/
 ├── fonts/           # CinaGEO, 00HypertextMono, GhostlyGothic
@@ -47,6 +50,20 @@ focus-ai-brand/assets/
     ├── card-components.html
     └── full-landing-page.html
 ```
+
+## Claude Code Integration
+
+The repository includes a generated `CLAUDE.md` file that provides Claude Code with a reference of all available skills and when to use them.
+
+### Regenerating CLAUDE.md
+
+After adding or modifying skills, run:
+
+```bash
+./generate-claude-md.sh
+```
+
+This extracts front matter from all `*/SKILL.md` files and creates a consolidated reference.
 
 ## Target Users
 
