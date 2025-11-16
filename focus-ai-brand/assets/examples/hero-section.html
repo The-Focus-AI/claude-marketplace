@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus.AI Hero Section</title>
+    <style>
+        @font-face {
+            font-family: 'CinaGEO';
+            src: url('../fonts/CinaGEO-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'CinaGEO';
+            src: url('../fonts/CinaGEO-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        :root {
+            --paper: #faf9f6;
+            --ink: #161616;
+            --graphite: #4a4a4a;
+            --petrol: #0e3b46;
+            --vermilion: #c3471d;
+            --border: #d4d3cf;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'CinaGEO', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--paper);
+            color: var(--ink);
+        }
+
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .asymmetric-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 140px 1fr 200px;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .label-gutter {
+            padding-top: 0.5rem;
+        }
+
+        .label {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--ink);
+        }
+
+        .content-main {
+            max-width: 740px;
+        }
+
+        .hero-heading {
+            font-size: clamp(32px, 8vw, 88px);
+            font-weight: 700;
+            line-height: 0.95;
+            letter-spacing: -0.045em;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-body {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: var(--graphite);
+            margin-bottom: 2rem;
+        }
+
+        .cta-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            padding: 0.875rem 1.5rem;
+            border: 1px solid var(--petrol);
+            background: transparent;
+            color: var(--petrol);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cta-link:hover {
+            background: rgba(14, 59, 70, 0.04);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(14, 59, 70, 0.1);
+        }
+
+        .cta-arrow {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cta-link:hover .cta-arrow {
+            transform: translateX(4px);
+        }
+
+        @media (max-width: 1024px) {
+            .asymmetric-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .hero-heading {
+                letter-spacing: -0.035em;
+            }
+
+            .hero-body {
+                font-size: 17px;
+                line-height: 1.65;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="asymmetric-container">
+            <div class="label-gutter">
+                <span class="label">Studio</span>
+            </div>
+            
+            <div class="content-main">
+                <h1 class="hero-heading">Agentic software for mission-critical operations</h1>
+                <p class="hero-body">
+                    We build schema-first systems that maintain human control while enabling AI agents to handle complex, multi-step workflows with precision.
+                </p>
+                <a href="#" class="cta-link">
+                    View our work
+                    <span class="cta-arrow">→</span>
+                </a>
+            </div>
+            
+            <div class="marginalia-gutter"></div>
+        </div>
+    </section>
+</body>
+</html>

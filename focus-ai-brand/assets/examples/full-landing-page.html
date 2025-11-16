@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus.AI - Agentic Software Studio</title>
+    <style>
+        @font-face {
+            font-family: 'CinaGEO';
+            src: url('../fonts/CinaGEO-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'CinaGEO';
+            src: url('../fonts/CinaGEO-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'CinaGEO';
+            src: url('../fonts/CinaGEO-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'CinaGEO';
+            src: url('../fonts/CinaGEO-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        :root {
+            /* Primary Colors */
+            --paper: #faf9f6;
+            --ink: #161616;
+            --graphite: #4a4a4a;
+            --petrol: #0e3b46;
+            --vermilion: #c3471d;
+            
+            /* Tinted Backgrounds */
+            --tint-cool: #edf6f8;
+            --tint-sage: #eef6ee;
+            --tint-warm: #f7f0e6;
+            
+            /* Semantic */
+            --background: var(--paper);
+            --foreground: var(--ink);
+            --primary: var(--petrol);
+            --secondary: var(--vermilion);
+            --border: #d4d3cf;
+            --muted: #e8e7e3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'CinaGEO', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--paper);
+            color: var(--ink);
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        /* Layout System */
+        .editorial-section {
+            padding: 7rem 2rem;
+        }
+
+        .asymmetric-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 140px 1fr 200px;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .label-gutter {
+            padding-top: 0.5rem;
+        }
+
+        .content-main {
+            max-width: 740px;
+        }
+
+        .marginalia-gutter {
+            padding-top: 0.5rem;
+        }
+
+        /* Typography */
+        .label {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--ink);
+        }
+
+        h1 {
+            font-size: clamp(32px, 8vw, 88px);
+            font-weight: 700;
+            line-height: 0.95;
+            letter-spacing: -0.045em;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: clamp(24px, 5vw, 48px);
+            font-weight: 700;
+            line-height: 1.0;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.75rem;
+        }
+
+        .large-body {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: var(--graphite);
+            margin-bottom: 2rem;
+        }
+
+        .body-text {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--graphite);
+            margin-bottom: 1.5rem;
+        }
+
+        .metadata {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: var(--graphite);
+        }
+
+        /* Components */
+        .cta-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            padding: 0.875rem 1.5rem;
+            border: 1px solid var(--petrol);
+            background: transparent;
+            color: var(--petrol);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cta-link:hover {
+            background: rgba(14, 59, 70, 0.04);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(14, 59, 70, 0.1);
+        }
+
+        .cta-arrow {
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cta-link:hover .cta-arrow {
+            transform: translateX(4px);
+        }
+
+        .card {
+            background: var(--paper);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card:hover {
+            transform: translateX(4px);
+            box-shadow: 0 8px 24px rgba(22, 22, 22, 0.08);
+        }
+
+        .card-label {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--petrol);
+            margin-bottom: 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .quiet-rule {
+            height: 1px;
+            background: rgba(212, 211, 207, 0.5);
+            margin: 4rem 0;
+            border: none;
+        }
+
+        /* Background Tints */
+        .bg-cool {
+            background-color: var(--tint-cool);
+        }
+
+        .bg-sage {
+            background-color: var(--tint-sage);
+        }
+
+        .bg-warm {
+            background-color: var(--tint-warm);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .asymmetric-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .editorial-section {
+                padding: 3rem 1.25rem;
+            }
+
+            h1 {
+                letter-spacing: -0.035em;
+            }
+
+            .large-body {
+                font-size: 17px;
+                line-height: 1.65;
+            }
+
+            .body-text {
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .label {
+                font-size: 11px;
+                letter-spacing: 0.1em;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeInUp 800ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="editorial-section">
+        <div class="asymmetric-container">
+            <div class="label-gutter">
+                <span class="label">Studio</span>
+            </div>
+            
+            <div class="content-main">
+                <h1 class="fade-in">Agentic software for mission-critical operations</h1>
+                <p class="large-body fade-in delay-100">
+                    We build schema-first systems that maintain human control while enabling AI agents to handle complex, multi-step workflows with precision.
+                </p>
+                <a href="#work" class="cta-link fade-in delay-200">
+                    View our work
+                    <span class="cta-arrow">→</span>
+                </a>
+            </div>
+            
+            <div class="marginalia-gutter">
+                <p class="metadata fade-in delay-300">
+                    Based in San Francisco
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="quiet-rule">
+
+    <!-- Capabilities Section -->
+    <section class="editorial-section bg-cool">
+        <div class="asymmetric-container">
+            <div class="label-gutter">
+                <span class="label">Capabilities</span>
+            </div>
+            
+            <div class="content-main">
+                <h2>How we work</h2>
+                <p class="large-body">
+                    Our approach combines rigorous system design with practical AI implementation, ensuring reliability at scale.
+                </p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-label">Schema-First</div>
+                        <h4>Structured Intelligence</h4>
+                        <p class="body-text">
+                            Build predictable systems with structured data models that AI agents can reliably interpret and manipulate.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-label">Human-in-Loop</div>
+                        <h4>Operator Control</h4>
+                        <p class="body-text">
+                            Critical decisions stay with operators. Clear control boundaries with contextual recommendations.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-label">System-Aware</div>
+                        <h4>Resilient Design</h4>
+                        <p class="body-text">
+                            Workflows that handle edge cases gracefully and fail predictably when constraints are violated.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="marginalia-gutter"></div>
+        </div>
+    </section>
+
+    <hr class="quiet-rule">
+
+    <!-- Work Section -->
+    <section class="editorial-section" id="work">
+        <div class="asymmetric-container">
+            <div class="label-gutter">
+                <span class="label">Selected Work</span>
+            </div>
+            
+            <div class="content-main">
+                <h2>Recent projects</h2>
+                
+                <div style="margin-top: 3rem;">
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <div class="card-label">Financial Services</div>
+                        <h3>Automated Compliance Review</h3>
+                        <p class="body-text">
+                            Built an agentic system for a $10B hedge fund to review trading compliance across 50,000+ daily transactions. Reduced review time from 4 hours to 15 minutes while maintaining 99.8% accuracy.
+                        </p>
+                        <p class="metadata">2024 • 6 months • Production</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <div class="card-label">Healthcare</div>
+                        <h3>Clinical Documentation Assistant</h3>
+                        <p class="body-text">
+                            Designed schema-driven system for hospital network to structure physician notes into standardized formats. Improved billing accuracy and reduced administrative burden by 60%.
+                        </p>
+                        <p class="metadata">2024 • 8 months • Pilot</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-label">Logistics</div>
+                        <h3>Supply Chain Orchestration</h3>
+                        <p class="body-text">
+                            Created multi-agent system for coordinating shipments across 200+ carriers. Optimized routing decisions while maintaining human approval for cost outliers.
+                        </p>
+                        <p class="metadata">2023 • 12 months • Production</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="marginalia-gutter"></div>
+        </div>
+    </section>
+
+    <hr class="quiet-rule">
+
+    <!-- Contact Section -->
+    <section class="editorial-section bg-warm">
+        <div class="asymmetric-container">
+            <div class="label-gutter">
+                <span class="label">Contact</span>
+            </div>
+            
+            <div class="content-main">
+                <h2>Let's work together</h2>
+                <p class="large-body">
+                    We partner with organizations tackling complex operational challenges that require both AI capability and system reliability.
+                </p>
+                <a href="mailto:hello@focus.ai" class="cta-link">
+                    Start a conversation
+                    <span class="cta-arrow">→</span>
+                </a>
+            </div>
+            
+            <div class="marginalia-gutter">
+                <p class="metadata">
+                    hello@focus.ai<br>
+                    San Francisco, CA
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
