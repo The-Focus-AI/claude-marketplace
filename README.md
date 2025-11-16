@@ -51,6 +51,16 @@ focus-ai-brand/assets/
     └── full-landing-page.html
 ```
 
+### Twitter OAuth CLI
+[twitter-oauth-cli/](twitter-oauth-cli/)
+
+Build CLI tools with Twitter/X OAuth 2.0 authentication:
+- **[SKILL.md](twitter-oauth-cli/SKILL.md)** - PKCE flow implementation guide
+- OAuth 2.0 PKCE flow for terminal applications
+- Token storage and auto-refresh patterns
+- Tweet posting and API access
+- Developer Portal setup (avoiding common pitfalls like `localhost` vs `127.0.0.1`)
+
 ## Claude Code Integration
 
 The repository includes a generated `CLAUDE.md` file that provides Claude Code with a reference of all available skills and when to use them.

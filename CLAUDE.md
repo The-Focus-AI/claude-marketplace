@@ -25,12 +25,20 @@ Apply Focus.AI brand guidelines to presentations, proposals, PDFs, PowerPoints, 
 
 ---
 
+### twitter-oauth-cli
+**Path**: `twitter-oauth-cli/SKILL.md`
+
+Build CLI tools that authenticate with Twitter/X OAuth 2.0 using PKCE flow. Use when creating command-line apps that need Twitter tokens, implementing device-code style auth for scripts, or building automation tools that post to Twitter. Trigger when user needs Twitter API access from terminal, wants to build a tweet poster, or needs OAuth 2.0 PKCE implementation.
+
+---
+
 ## How to Use
 
 When a user request matches one of the skill descriptions above:
 
 1. **Load the SKILL.md file** for that skill to get detailed implementation guidance
 2. **Follow the patterns** described in the skill documentation
+3. **Reference the REFERENCE.md** (if available) for complete specifications
 
 ### Trigger Examples
 
