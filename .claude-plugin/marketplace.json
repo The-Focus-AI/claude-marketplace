@@ -1,0 +1,53 @@
+{
+  "name": "focus-marketplace",
+  "owner": {
+    "name": "The Focus AI"
+  },
+  "plugins": [
+    {
+      "name": "nano-banana-cli",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/nano-banana-cli"
+      },
+      "version": "1.0.0",
+      "description": "Google Gemini image generation"
+    },
+    {
+      "name": "theme-factory",
+      "source": "./skills/theme-factory",
+      "version": "1.0.0",
+      "description": "Apply professional styling themes to artifacts"
+    },
+    {
+      "name": "focus-ai-brand",
+      "source": "./skills/focus-ai-brand",
+      "version": "1.0.0",
+      "description": "Apply Focus.AI brand guidelines (Client and Labs)"
+    },
+    {
+      "name": "focus-account-integration",
+      "source": "./skills/focus-account-integration",
+      "version": "1.0.0",
+      "description": "Integrate with Focus API for auth, wallet, jobs"
+    },
+    {
+      "name": "distill-backend-service",
+      "source": "./skills/distill-backend-service",
+      "version": "1.0.0",
+      "description": "Build Distill microservices for content aggregation"
+    },
+    {
+      "name": "twitter-oauth-cli",
+      "source": "./skills/twitter-oauth-cli",
+      "version": "1.0.0",
+      "description": "Twitter/X OAuth 2.0 PKCE for CLI tools"
+    },
+    {
+      "name": "focus-agents",
+      "source": "./agents",
+      "version": "1.0.0",
+      "description": "Research and engineering analysis agents"
+    }
+  ]
+}

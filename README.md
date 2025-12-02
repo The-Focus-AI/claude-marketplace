@@ -1,90 +1,93 @@
-# thefocus-skills
+# claude-marketplace
 
-Skills and integration documentation repository for Focus.AI - building agentic software for mission-critical operations.
+Claude Code marketplace with skills for Focus.AI integration, theming, and development workflows.
 
-## Overview
+## Installation
 
-This repository contains reference documentation, brand assets, and implementation patterns for the Focus.AI platform ecosystem.
+```bash
+# Add the marketplace
+/plugin marketplace add The-Focus-AI/claude-marketplace
+
+# Install the plugin
+/plugin install claude-marketplace@focus-marketplace
+```
+
+Then restart Claude Code.
 
 ## Skills
 
-Each skill provides a `SKILL.md` with front matter (name, description) and implementation guidance, plus a `REFERENCE.md` with complete specifications.
+### theme-factory
+Apply professional styling themes to artifacts (slides, docs, reports, HTML pages). Includes 10 pre-set themes with colors and fonts.
 
-### Distill Backend Service
-[distill-backend-service/](distill-backend-service/)
+**Triggers:** "apply a theme", "style this presentation", "make it look professional"
 
-Build microservices for AI-powered content aggregation:
-- **[SKILL.md](distill-backend-service/SKILL.md)** - Quick start guide and patterns
-- **[REFERENCE.md](distill-backend-service/REFERENCE.md)** - Full framework specification
-- Watch/unwatch user lifecycle management
-- Standard API patterns for service discovery
-- AI-generated summaries and feeds
-- JWT-based authentication via Clerk
+### focus-ai-brand
+Apply Focus.AI brand guidelines to materials. Supports two sub-brands:
+- **Focus.AI Client** - services, proposals, client work
+- **Focus.AI Labs** - research, experiments, public content
 
-### Focus Account Integration
-[focus-account-integration/](focus-account-integration/)
+**Triggers:** "focus.ai style", "focus brand", "labs style"
 
-Connect applications to the Focus API:
-- **[SKILL.md](focus-account-integration/SKILL.md)** - Integration quick start
-- **[REFERENCE.md](focus-account-integration/REFERENCE.md)** - Complete API guide
-- Authentication methods (PAT, Clerk JWT, browser cookies)
-- Wallet and credit management
-- Job creation, completion, and failure workflows
-- Device-code flow for CLI applications
+### focus-account-integration
+Integrate applications with Focus API for authentication, wallet/credits, and job management.
 
-### Focus.AI Brand System
-[focus-ai-brand/](focus-ai-brand/)
+**Triggers:** "connect to focus api", "device-code flow", "credit management"
 
-Complete brand identity system:
-- **[SKILL.md](focus-ai-brand/SKILL.md)** - Style guide with colors, typography, layout
-- **Color Palette** - Paper, Ink, Graphite, Petrol, Vermilion
-- **Typography** - CinaGEO, 00HypertextMono, GhostlyGothic
-- **Layout** - Asymmetric three-column grid system
-- **Assets** - Font files and HTML examples
+### distill-backend-service
+Build Distill microservices for content aggregation from platforms (Twitter/X, Email, GitHub, YouTube).
 
-```
-focus-ai-brand/assets/
-├── fonts/           # CinaGEO, 00HypertextMono, GhostlyGothic
-└── examples/        # HTML reference implementations
-    ├── hero-section.html
-    ├── card-components.html
-    └── full-landing-page.html
-```
+**Triggers:** "build distill service", "content aggregation", "watch/unwatch lifecycle"
 
-### Twitter OAuth CLI
-[twitter-oauth-cli/](twitter-oauth-cli/)
+### twitter-oauth-cli
+Build CLI tools that authenticate with Twitter/X OAuth 2.0 using PKCE flow.
 
-Build CLI tools with Twitter/X OAuth 2.0 authentication:
-- **[SKILL.md](twitter-oauth-cli/SKILL.md)** - PKCE flow implementation guide
-- OAuth 2.0 PKCE flow for terminal applications
-- Token storage and auto-refresh patterns
-- Tweet posting and API access
-- Developer Portal setup (avoiding common pitfalls like `localhost` vs `127.0.0.1`)
+**Triggers:** "twitter cli auth", "oauth pkce", "tweet from terminal"
 
-## Claude Code Integration
+## Commands
 
-The repository includes a generated `CLAUDE.md` file that provides Claude Code with a reference of all available skills and when to use them.
-
-### Regenerating CLAUDE.md
-
-After adding or modifying skills, run:
+### /do-research
+Find the optimal library, tool, or technique for a project need. Generates a research report with recommendations.
 
 ```bash
-./generate-claude-md.sh
+/do-research date formatting library for TypeScript
 ```
 
-This extracts front matter from all `*/SKILL.md` files and creates a consolidated reference.
+### /engineering-processes-advisor
+Analyze a codebase and produce a comprehensive engineering assessment covering:
+- Technology stack audit
+- Testing assessment
+- Security review
+- Dependency health
+- Prioritized improvements
 
-## Target Users
+```bash
+/engineering-processes-advisor
+```
 
-- **Backend developers** implementing Distill services
-- **Frontend developers** integrating Focus APIs
-- **Designers** creating branded materials
-- **DevOps/infrastructure teams** deploying services
+## Related Plugins
 
-## Core Principles
+- [nano-banana-cli](https://github.com/The-Focus-AI/nano-banana-cli) - Google Gemini image generation
 
-- Schema-first systems maintaining human control
-- Intelligent content aggregation and summarization
-- Extensible, LLM-optimized service interfaces
-- Unified authentication and credit management
+## Development
+
+This plugin follows the Claude Code plugin structure:
+
+```
+claude-marketplace/
+├── .claude-plugin/
+│   ├── plugin.json        # Plugin manifest
+│   └── marketplace.json   # Marketplace manifest
+├── skills/
+│   ├── theme-factory/
+│   ├── focus-ai-brand/
+│   ├── focus-account-integration/
+│   ├── distill-backend-service/
+│   └── twitter-oauth-cli/
+└── commands/
+    ├── do-research.md
+    └── engineering-processes-advisor.md
+```
+
+## License
+
+Proprietary - The Focus AI

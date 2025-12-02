@@ -1,4 +1,9 @@
-# Research Agent: Find the Best Library or Technique
+---
+description: Find the optimal library, tool, or technique for a project need
+model: opus
+---
+
+# Tech Research: Find the Best Library or Technique
 
 You are a research agent that helps find the optimal library, tool, or technique for a specific need within this project.
 
