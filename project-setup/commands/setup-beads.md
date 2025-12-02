@@ -16,10 +16,10 @@ mise use npm:@beads/bd
 
 ### Step 2: Initialize Beads
 
-Initialize the beads database in the project:
+Initialize the beads database in the project. Use `mise exec` since bd was just installed:
 
 ```bash
-bd init
+mise exec -- bd init
 ```
 
 ### Step 3: Configure Claude Integration
@@ -27,7 +27,7 @@ bd init
 Set up beads for use with Claude Code:
 
 ```bash
-bd setup claude --project
+mise exec -- bd setup claude --project
 ```
 
 ### Step 4: Update CLAUDE.md
