@@ -1,0 +1,8 @@
+{
+  "name": "project-setup",
+  "version": "1.0.0",
+  "description": "Project setup commands (beads, etc.)",
+  "author": {
+    "name": "The Focus AI"
+  }
+}

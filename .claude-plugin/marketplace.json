@@ -48,6 +48,12 @@
       "source": "./agents",
       "version": "1.0.0",
       "description": "Research and engineering analysis agents"
+    },
+    {
+      "name": "project-setup",
+      "source": "./project-setup",
+      "version": "1.0.0",
+      "description": "Project setup commands (beads, etc.)"
     }
   ]
 }
