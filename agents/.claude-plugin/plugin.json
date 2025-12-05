@@ -1,9 +1,0 @@
-{
-  "name": "focus-agents",
-  "version": "1.0.0",
-  "description": "Research and engineering analysis agents",
-  "author": {
-    "name": "The Focus AI"
-  },
-  "agents": "./agents"
-}
