@@ -54,6 +54,15 @@
       "source": "./project-setup",
       "version": "1.0.0",
       "description": "Project setup commands (beads, etc.)"
+    },
+    {
+      "name": "claude-marketplace",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/claude-marketplace"
+      },
+      "version": "1.0.0",
+      "description": "Focus AI plugin marketplace with skills, agents, and project tools"
     }
   ]
 }
