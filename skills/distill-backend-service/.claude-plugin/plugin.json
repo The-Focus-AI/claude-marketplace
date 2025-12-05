@@ -1,6 +1,6 @@
 {
   "name": "distill-backend-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build Distill microservices for content aggregation",
   "author": {
     "name": "The Focus AI"
