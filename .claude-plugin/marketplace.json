@@ -5,13 +5,13 @@
   },
   "plugins": [
     {
-      "name": "nano-banana-cli",
+      "name": "nano-banana",
       "source": {
         "source": "github",
         "repo": "The-Focus-AI/nano-banana-cli"
       },
       "version": "1.0.0",
-      "description": "Google Gemini image generation"
+      "description": "Generate images and videos using Google Gemini and Veo models"
     },
     {
       "name": "theme-factory",
