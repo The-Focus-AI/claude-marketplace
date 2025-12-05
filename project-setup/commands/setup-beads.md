@@ -1,3 +1,7 @@
+---
+description: Initialize beads issue tracking in current project
+---
+
 # Setup Beads Issue Tracker
 
 You are setting up the Beads (bd) issue tracking system for this project. Run the following commands in sequence to configure the environment.

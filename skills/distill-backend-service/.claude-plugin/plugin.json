@@ -4,5 +4,6 @@
   "description": "Build Distill microservices for content aggregation",
   "author": {
     "name": "The Focus AI"
-  }
+  },
+  "skills": "./skills"
 }

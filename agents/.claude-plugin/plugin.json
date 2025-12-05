@@ -4,5 +4,6 @@
   "description": "Research and engineering analysis agents",
   "author": {
     "name": "The Focus AI"
-  }
+  },
+  "agents": "./agents"
 }

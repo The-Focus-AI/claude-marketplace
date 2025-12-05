@@ -4,5 +4,6 @@
   "description": "Apply professional styling themes to artifacts (slides, docs, reports, HTML)",
   "author": {
     "name": "The Focus AI"
-  }
+  },
+  "skills": "./skills"
 }

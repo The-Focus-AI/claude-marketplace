@@ -4,5 +4,6 @@
   "description": "Project setup commands (beads, etc.)",
   "author": {
     "name": "The Focus AI"
-  }
+  },
+  "commands": "./commands"
 }
