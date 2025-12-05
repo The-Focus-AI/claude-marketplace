@@ -5,5 +5,5 @@
   "author": {
     "name": "The Focus AI"
   },
-  "agents": "./agents"
+  "agents": "."
 }
