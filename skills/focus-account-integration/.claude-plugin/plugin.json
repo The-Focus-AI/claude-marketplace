@@ -1,6 +1,6 @@
 {
   "name": "focus-account-integration",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Integrate with Focus API for auth, wallet/credits, and job management",
   "author": {
     "name": "The Focus AI"

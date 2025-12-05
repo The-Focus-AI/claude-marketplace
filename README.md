@@ -1,4 +1,4 @@
-# claude-marketplace
+# focus-marketplace
 
 Claude Code marketplace with skills for Focus.AI integration, theming, and development workflows.
 
@@ -9,7 +9,7 @@ Claude Code marketplace with skills for Focus.AI integration, theming, and devel
 /plugin marketplace add The-Focus-AI/claude-marketplace
 
 # Install the plugin
-/plugin install claude-marketplace@focus-marketplace
+/plugin install focus-marketplace
 ```
 
 Then restart Claude Code.
