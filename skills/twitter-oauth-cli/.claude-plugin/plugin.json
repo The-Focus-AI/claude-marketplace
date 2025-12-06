@@ -1,9 +1,0 @@
-{
-  "name": "twitter-oauth-cli",
-  "version": "1.0.2",
-  "description": "Build CLI tools with Twitter/X OAuth 2.0 PKCE authentication",
-  "author": {
-    "name": "The Focus AI"
-  },
-  "skills": "./skills"
-}
