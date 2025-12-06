@@ -48,6 +48,15 @@
       },
       "version": "1.0.0",
       "description": "Project setup commands for Focus.AI projects"
+    },
+    {
+      "name": "chrome-driver",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/chrome-driver"
+      },
+      "version": "0.1.0",
+      "description": "Browser automation via Chrome DevTools Protocol"
     }
   ]
 }
