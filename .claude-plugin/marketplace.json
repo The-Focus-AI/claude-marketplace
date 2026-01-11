@@ -57,6 +57,15 @@
       },
       "version": "0.1.0",
       "description": "Browser automation via Chrome DevTools Protocol"
+    },
+    {
+      "name": "buttondown-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/buttondown-skill"
+      },
+      "version": "1.0.0",
+      "description": "Manage Buttondown newsletters - create drafts, schedule sends, view analytics"
     }
   ]
 }
