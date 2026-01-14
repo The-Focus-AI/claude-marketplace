@@ -75,6 +75,15 @@
       },
       "version": "1.0.0",
       "description": "Gmail and Google Calendar integration - read, send, search emails and manage calendar events"
+    },
+    {
+      "name": "granola-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/granola-skill"
+      },
+      "version": "1.0.0",
+      "description": "Access Granola meeting notes, transcripts, and summaries"
     }
   ]
 }
