@@ -21,6 +21,8 @@ Then restart Claude Code.
 | **focus-commands** | Project setup commands (beads, etc.) | [focus-commands](https://github.com/The-Focus-AI/focus-commands) |
 | **nano-banana** | Google Gemini image/video generation | [nano-banana-cli](https://github.com/The-Focus-AI/nano-banana-cli) |
 | **chrome-driver** | Browser automation via Chrome DevTools Protocol | [chrome-driver](https://github.com/The-Focus-AI/chrome-driver) |
+| **buttondown-skill** | Manage Buttondown newsletters | [buttondown-skill](https://github.com/The-Focus-AI/buttondown-skill) |
+| **gmail-skill** | Gmail and Google Calendar integration | [gmail-skill](https://github.com/The-Focus-AI/gmail-skill) |
 
 ## Structure
 
