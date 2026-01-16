@@ -68,13 +68,13 @@
       "description": "Manage Buttondown newsletters - create drafts, schedule sends, view analytics"
     },
     {
-      "name": "gmail-skill",
+      "name": "google-skill",
       "source": {
         "source": "github",
-        "repo": "The-Focus-AI/gmail-skill"
+        "repo": "The-Focus-AI/google-skill"
       },
-      "version": "1.0.0",
-      "description": "Gmail and Google Calendar integration - read, send, search emails and manage calendar events"
+      "version": "0.3.0",
+      "description": "Google services integration - Gmail, Calendar, Sheets, Docs, and YouTube"
     },
     {
       "name": "granola-skill",
