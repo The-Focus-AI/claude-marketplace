@@ -13,16 +13,44 @@ Then restart Claude Code.
 
 ## Available Plugins
 
-| Plugin | Description | Repo |
-|--------|-------------|------|
-| **focus-agents** | Research and engineering analysis agents | [focus-agents](https://github.com/The-Focus-AI/focus-agents) |
-| **focus-ai-brand** | Apply Focus.AI brand guidelines (Client and Labs) | [focus-ai-brand](https://github.com/The-Focus-AI/focus-ai-brand) |
-| **focus-skills** | Development skills (Distill, Focus API, Twitter OAuth) | [focus-skills](https://github.com/The-Focus-AI/focus-skills) |
-| **focus-commands** | Project setup commands (beads, etc.) | [focus-commands](https://github.com/The-Focus-AI/focus-commands) |
-| **nano-banana** | Google Gemini image/video generation | [nano-banana-cli](https://github.com/The-Focus-AI/nano-banana-cli) |
-| **chrome-driver** | Browser automation via Chrome DevTools Protocol | [chrome-driver](https://github.com/The-Focus-AI/chrome-driver) |
-| **buttondown-skill** | Manage Buttondown newsletters | [buttondown-skill](https://github.com/The-Focus-AI/buttondown-skill) |
-| **gmail-skill** | Gmail and Google Calendar integration | [gmail-skill](https://github.com/The-Focus-AI/gmail-skill) |
+### Media Generation
+
+| Plugin | Description | Skills |
+|--------|-------------|--------|
+| **[nano-banana](https://github.com/The-Focus-AI/nano-banana-cli)** | AI image and video generation using Google Gemini and Veo models | `nano-banana-imagegen` - Text-to-image, image editing, style transfer, batch processing<br>`nano-banana-videogen` - Text-to-video, image-to-video, scene extensions |
+
+### Browser Automation
+
+| Plugin | Description | Commands |
+|--------|-------------|----------|
+| **[chrome-driver](https://github.com/The-Focus-AI/chrome-driver)** | Web automation via Chrome DevTools Protocol (pure Perl) | `/browser` `/screenshot` `/pdf` `/extract` `/navigate` `/interact` `/form` `/record` `/cookies` |
+
+### Google Services
+
+| Plugin | Description | Skills |
+|--------|-------------|--------|
+| **[google-skill](https://github.com/The-Focus-AI/google-skill)** | Unified Google services with shared OAuth | `/gmail` - Read, send, search emails; manage calendar events<br>`/gsheets` - Create spreadsheets, read/write cells, append rows<br>`/gdocs` - Create documents, insert text, find/replace<br>`/youtube` - Search videos, channels, playlists, view comments |
+
+### Productivity Integrations
+
+| Plugin | Description | Skills |
+|--------|-------------|--------|
+| **[buttondown-skill](https://github.com/The-Focus-AI/buttondown-skill)** | Newsletter management for Buttondown | `/buttondown` - Create drafts, schedule sends, view analytics, manage content |
+| **[granola-skill](https://github.com/The-Focus-AI/granola-skill)** | Access Granola meeting notes and transcripts | `/granola` - List meetings, show details, search by participant/content, export to markdown |
+
+### Focus.AI Development
+
+| Plugin | Description | Skills/Commands |
+|--------|-------------|-----------------|
+| **[focus-ai-brand](https://github.com/The-Focus-AI/focus-ai-brand)** | Apply Focus.AI brand guidelines | `/report` - Convert markdown to branded HTML<br>Auto-triggers on "focus.ai style" or "focus brand" |
+| **[focus-skills](https://github.com/The-Focus-AI/focus-skills)** | Development guidance for Focus.AI ecosystem | Distill backend service, Focus Account integration, Twitter OAuth CLI |
+| **[focus-commands](https://github.com/The-Focus-AI/focus-commands)** | Project setup automation | `/setup-beads` - Initialize Beads issue tracking |
+
+### Research
+
+| Plugin | Description | Skills |
+|--------|-------------|--------|
+| **[tech-researcher](https://github.com/The-Focus-AI/focus-agents)** | Academic-style web research and report generation | `/research` - Gather 10+ sources, ask clarifying questions, generate markdown reports |
 
 ## Structure
 
