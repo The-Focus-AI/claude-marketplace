@@ -84,6 +84,15 @@
       },
       "version": "0.1.0",
       "description": "Access Granola meeting notes, transcripts, and summaries"
+    },
+    {
+      "name": "twitter-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/twitter-skill"
+      },
+      "version": "1.0.0",
+      "description": "Twitter/X API integration - post tweets, read timeline, manage lists, engage with content"
     }
   ]
 }

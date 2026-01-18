@@ -53,6 +53,14 @@ After adding the marketplace, install specific plugins:
 
 **Skills:** `/gmail` (email + calendar), `/gsheets` (spreadsheets), `/gdocs` (documents), `/youtube` (video search)
 
+### Social Media
+
+| Plugin | Install | Description |
+|--------|---------|-------------|
+| **[twitter-skill](https://github.com/The-Focus-AI/twitter-skill)** | `/plugin install twitter-skill@focus-marketplace` | Twitter/X API - tweets, timeline, lists, engagement |
+
+**Skills:** `/twitter` (post tweets, read timeline, manage lists, engage with content)
+
 ### Productivity Integrations
 
 | Plugin | Install | Description |
