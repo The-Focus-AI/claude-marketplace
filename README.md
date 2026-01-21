@@ -67,8 +67,9 @@ After adding the marketplace, install specific plugins:
 |--------|---------|-------------|
 | **[buttondown-skill](https://github.com/The-Focus-AI/buttondown-skill)** | `/plugin install buttondown-skill@focus-marketplace` | Newsletter management for Buttondown |
 | **[granola-skill](https://github.com/The-Focus-AI/granola-skill)** | `/plugin install granola-skill@focus-marketplace` | Access Granola meeting notes and transcripts |
+| **[microsoft-skill](https://github.com/The-Focus-AI/microsoft-skill)** | `/plugin install microsoft-skill@focus-marketplace` | Microsoft Graph API - Outlook/Hotmail email access |
 
-**Skills:** `/buttondown` (drafts, scheduling, analytics), `/granola` (meetings, transcripts, search)
+**Skills:** `/buttondown` (drafts, scheduling, analytics), `/granola` (meetings, transcripts, search), `/microsoft-outlook` (emails, messages, download)
 
 ### Focus.AI Development
 

@@ -93,6 +93,15 @@
       },
       "version": "1.0.0",
       "description": "Twitter/X API integration - post tweets, read timeline, manage lists, engage with content"
+    },
+    {
+      "name": "microsoft-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/microsoft-skill"
+      },
+      "version": "1.0.0",
+      "description": "Microsoft Graph API integration - access Outlook/Hotmail emails"
     }
   ]
 }
