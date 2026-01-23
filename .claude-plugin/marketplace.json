@@ -102,6 +102,15 @@
       },
       "version": "1.0.0",
       "description": "Microsoft Graph API integration - access Outlook/Hotmail emails"
+    },
+    {
+      "name": "embeddings-search-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/embeddings-search-skill"
+      },
+      "version": "1.0.0",
+      "description": "Hybrid document search combining literal matching with semantic embeddings"
     }
   ]
 }

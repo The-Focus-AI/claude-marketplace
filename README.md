@@ -89,6 +89,14 @@ After adding the marketplace, install specific plugins:
 
 **Skills:** `/research` (gather 10+ sources, generate markdown reports)
 
+### Document Search
+
+| Plugin | Install | Description |
+|--------|---------|-------------|
+| **[embeddings-search-skill](https://github.com/The-Focus-AI/embeddings-search-skill)** | `/plugin install embeddings-search-skill@focus-marketplace` | Hybrid document search with semantic embeddings |
+
+**Features:** Combines grep-style matching with semantic similarity using Xenova/all-MiniLM-L6-v2 (384-dim vectors). Auto-indexes documents on first search with JSON sidecar storage (.embedding files). Supports date filtering and incremental updates. Direct support for .txt/.md; .pdf/.doc/.docx/.ppt/.pptx via text extraction sidecars.
+
 ## Structure
 
 This is a registry-only marketplace. All plugins are hosted in their own repositories:
