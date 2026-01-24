@@ -91,7 +91,7 @@
         "source": "github",
         "repo": "The-Focus-AI/twitter-skill"
       },
-      "version": "1.0.0",
+      "version": "1.3.0",
       "description": "Twitter/X API integration - post tweets, read timeline, manage lists, engage with content"
     },
     {
@@ -109,7 +109,7 @@
         "source": "github",
         "repo": "The-Focus-AI/embeddings-search-skill"
       },
-      "version": "1.0.0",
+      "version": "0.1.0",
       "description": "Hybrid document search combining literal matching with semantic embeddings"
     }
   ]

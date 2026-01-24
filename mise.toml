@@ -2,3 +2,15 @@
 node = "latest"
 "npm:@anthropic-ai/claude-code" = "latest"
 "npm:@beads/bd" = "latest"
+
+[tasks.update-plugins]
+description = "Update all focus-marketplace plugins to latest versions"
+run = "./scripts/update-plugins.sh"
+
+[tasks.clean-plugin-cache]
+description = "Clean all plugin cache (forces re-download on next use)"
+run = "./scripts/clean-plugin-cache.sh"
+
+[tasks.plugin-status]
+description = "Show status of all installed plugins"
+run = "./scripts/plugin-status.sh"
