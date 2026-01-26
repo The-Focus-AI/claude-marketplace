@@ -19,7 +19,7 @@
         "source": "github",
         "repo": "The-Focus-AI/focus-ai-brand"
       },
-      "version": "1.1.0",
+      "version": "1.2.0",
       "description": "Apply Focus.AI brand guidelines (Client and Labs)"
     },
     {
@@ -73,7 +73,7 @@
         "source": "github",
         "repo": "The-Focus-AI/google-skill"
       },
-      "version": "0.8.0",
+      "version": "0.10.0",
       "description": "Google services integration - Gmail, Calendar, Sheets, Docs, and YouTube"
     },
     {
@@ -109,7 +109,7 @@
         "source": "github",
         "repo": "The-Focus-AI/embeddings-search-skill"
       },
-      "version": "0.1.0",
+      "version": "0.2.0",
       "description": "Hybrid document search combining literal matching with semantic embeddings"
     }
   ]

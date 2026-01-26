@@ -14,3 +14,11 @@ run = "./scripts/clean-plugin-cache.sh"
 [tasks.plugin-status]
 description = "Show status of all installed plugins"
 run = "./scripts/plugin-status.sh"
+
+[tasks.check-plugin-mods]
+description = "Check for local modifications in plugins that may need syncing"
+run = "./scripts/check-plugin-mods.sh"
+
+[tasks.reload-plugins]
+description = "Force reload all plugins (clears cache and reinstalls from source)"
+run = "./scripts/reload-plugins.sh"
