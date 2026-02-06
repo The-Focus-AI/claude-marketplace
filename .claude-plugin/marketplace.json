@@ -111,6 +111,15 @@
       },
       "version": "0.2.0",
       "description": "Hybrid document search combining literal matching with semantic embeddings"
+    },
+    {
+      "name": "quickbooks-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/quickbooks-skill"
+      },
+      "version": "1.0.0",
+      "description": "QuickBooks Online read-only access - query customers, vendors, invoices, bills, and transactions"
     }
   ]
 }

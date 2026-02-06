@@ -71,6 +71,14 @@ After adding the marketplace, install specific plugins:
 
 **Skills:** `/buttondown` (drafts, scheduling, analytics), `/granola` (meetings, transcripts, search), `/microsoft-outlook` (emails, messages, download)
 
+### Accounting
+
+| Plugin | Install | Description |
+|--------|---------|-------------|
+| **[quickbooks-skill](https://github.com/The-Focus-AI/quickbooks-skill)** | `/plugin install quickbooks-skill@focus-marketplace` | QuickBooks Online read-only access |
+
+**Skills:** `/quickbooks` (customers, vendors, invoices, bills, purchases, deposits, time activities, employees, accounts)
+
 ### Focus.AI Development
 
 | Plugin | Install | Description |
