@@ -120,6 +120,15 @@
       },
       "version": "1.0.0",
       "description": "QuickBooks Online read-only access - query customers, vendors, invoices, bills, and transactions"
+    },
+    {
+      "name": "plausible-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/plausible-skill"
+      },
+      "version": "1.0.0",
+      "description": "Query Plausible Analytics API - get website traffic, visitor stats, and analytics data"
     }
   ]
 }
