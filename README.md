@@ -97,6 +97,15 @@ After adding the marketplace, install specific plugins:
 
 **Skills:** `/research` (gather 10+ sources, generate markdown reports)
 
+### Infrastructure
+
+| Plugin | Install | Description |
+|--------|---------|-------------|
+| **[marina-skill](https://github.com/The-Focus-AI/marina-skill)** | `/plugin install marina-skill@focus-marketplace` | Hetzner servers, Cloudflare DNS, Docker deployments |
+
+**Skills:** `server-management` (create/list/destroy servers), `server-bootstrap` (Docker, Caddy, deploy user), `dns-management` (Cloudflare records), `app-deployment` (git-push-to-deploy)
+**Commands:** `/marina-server` `/marina-deploy` `/marina-status`
+
 ### Document Search
 
 | Plugin | Install | Description |

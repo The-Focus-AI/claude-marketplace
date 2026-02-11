@@ -129,6 +129,15 @@
       },
       "version": "1.0.0",
       "description": "Query Plausible Analytics API - get website traffic, visitor stats, and analytics data"
+    },
+    {
+      "name": "marina-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/marina-skill"
+      },
+      "version": "0.1.0",
+      "description": "Manage Hetzner Cloud servers, Cloudflare DNS, and Docker-based app deployments"
     }
   ]
 }
