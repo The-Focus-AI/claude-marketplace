@@ -106,6 +106,14 @@ After adding the marketplace, install specific plugins:
 **Skills:** `server-management` (create/list/destroy servers), `server-bootstrap` (Docker, Caddy, deploy user), `dns-management` (Cloudflare records), `app-deployment` (git-push-to-deploy)
 **Commands:** `/marina-server` `/marina-deploy` `/marina-status`
 
+### Prediction Markets
+
+| Plugin | Install | Description |
+|--------|---------|-------------|
+| **[polymarket-skill](https://github.com/The-Focus-AI/polymarket-skill)** | `/plugin install polymarket-skill@focus-marketplace` | Polymarket prediction market data and analytics |
+
+**Skills:** `/polymarket` (search markets, get prices, view events, trending markets, orderbook data, trade history)
+
 ### Document Search
 
 | Plugin | Install | Description |

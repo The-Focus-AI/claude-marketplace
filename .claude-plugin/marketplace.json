@@ -138,6 +138,15 @@
       },
       "version": "0.1.0",
       "description": "Manage Hetzner Cloud servers, Cloudflare DNS, and Docker-based app deployments"
+    },
+    {
+      "name": "polymarket-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/polymarket-skill"
+      },
+      "version": "1.0.0",
+      "description": "Polymarket prediction market data - search markets, get prices, view events and trends"
     }
   ]
 }
