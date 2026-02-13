@@ -145,7 +145,7 @@
         "source": "github",
         "repo": "The-Focus-AI/polymarket-skill"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Polymarket prediction market data - search markets, get prices, view events and trends"
     }
   ]
