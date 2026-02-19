@@ -19,7 +19,7 @@
         "source": "github",
         "repo": "The-Focus-AI/focus-ai-brand"
       },
-      "version": "1.2.0",
+      "version": "1.3.0",
       "description": "Apply Focus.AI brand guidelines (Client and Labs)"
     },
     {
@@ -28,7 +28,7 @@
         "source": "github",
         "repo": "The-Focus-AI/focus-skills"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Collection of Focus.AI development skills"
     },
     {
@@ -37,7 +37,7 @@
         "source": "github",
         "repo": "The-Focus-AI/focus-agents"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Research and engineering analysis agents"
     },
     {
@@ -46,7 +46,7 @@
         "source": "github",
         "repo": "The-Focus-AI/focus-commands"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Project setup commands for Focus.AI projects"
     },
     {
@@ -55,7 +55,7 @@
         "source": "github",
         "repo": "The-Focus-AI/chrome-driver"
       },
-      "version": "0.1.0",
+      "version": "0.2.0",
       "description": "Browser automation via Chrome DevTools Protocol"
     },
     {
@@ -82,7 +82,7 @@
         "source": "github",
         "repo": "The-Focus-AI/granola-skill"
       },
-      "version": "0.1.0",
+      "version": "0.2.0",
       "description": "Access Granola meeting notes, transcripts, and summaries"
     },
     {
@@ -100,7 +100,7 @@
         "source": "github",
         "repo": "The-Focus-AI/microsoft-skill"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Microsoft Graph API integration - access Outlook/Hotmail emails"
     },
     {
@@ -127,7 +127,7 @@
         "source": "github",
         "repo": "The-Focus-AI/plausible-skill"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Query Plausible Analytics API - get website traffic, visitor stats, and analytics data"
     },
     {
