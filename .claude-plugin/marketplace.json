@@ -147,6 +147,15 @@
       },
       "version": "1.1.0",
       "description": "Polymarket prediction market data - search markets, get prices, view events and trends"
+    },
+    {
+      "name": "pocketcast-skill",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/pocketcast-skill"
+      },
+      "version": "1.0.0",
+      "description": "Access Pocket Casts podcasts - starred episodes, listening history, show notes, and podcast metadata"
     }
   ]
 }
