@@ -19,7 +19,7 @@
         "source": "github",
         "repo": "The-Focus-AI/focus-ai-brand"
       },
-      "version": "1.3.0",
+      "version": "1.4.0",
       "description": "Apply Focus.AI brand guidelines (Client and Labs)"
     },
     {
@@ -55,7 +55,7 @@
         "source": "github",
         "repo": "The-Focus-AI/chrome-driver"
       },
-      "version": "0.2.0",
+      "version": "0.3.0",
       "description": "Browser automation via Chrome DevTools Protocol"
     },
     {
