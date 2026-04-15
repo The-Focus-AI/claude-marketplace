@@ -122,6 +122,14 @@ After adding the marketplace, install specific plugins:
 
 **Features:** Combines grep-style matching with semantic similarity using Xenova/all-MiniLM-L6-v2 (384-dim vectors). Auto-indexes documents on first search with JSON sidecar storage (.embedding files). Supports date filtering and incremental updates. Direct support for .txt/.md; .pdf/.doc/.docx/.ppt/.pptx via text extraction sidecars.
 
+### macOS clipboard (markdown → rich text)
+
+| Plugin | Install | Description |
+|--------|---------|-------------|
+| **[mdcopy](https://github.com/The-Focus-AI/mdcopy)** | `/plugin install mdcopy@focus-marketplace` | Pandoc + pasteboard: paste GFM into Mail/Docs/Slack/Word with real headings, lists, tables, and links |
+
+**Skills:** `mdcopy` (pipe or file markdown to HTML clipboard; requires macOS and `brew install pandoc`). Fetchable agent spec: `https://raw.githubusercontent.com/The-Focus-AI/mdcopy/main/LLM.txt`
+
 ## Structure
 
 This is a registry-only marketplace. All plugins are hosted in their own repositories:

@@ -156,6 +156,15 @@
       },
       "version": "1.0.0",
       "description": "Access Pocket Casts podcasts - starred episodes, listening history, show notes, and podcast metadata"
+    },
+    {
+      "name": "mdcopy",
+      "source": {
+        "source": "github",
+        "repo": "The-Focus-AI/mdcopy"
+      },
+      "version": "1.0.0",
+      "description": "macOS: convert GitHub-Flavored Markdown to rich HTML on the clipboard for Mail, Docs, Slack, and Word"
     }
   ]
 }
