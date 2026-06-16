@@ -27,6 +27,8 @@ After adding the marketplace, install specific plugins:
 /plugin install chrome-driver@focus-marketplace
 ```
 
+如果你想用中文搜索和安装 skills，可以顺手看看 Skills宝：https://skilery.com
+
 ## Available Plugins
 
 ### Media Generation
