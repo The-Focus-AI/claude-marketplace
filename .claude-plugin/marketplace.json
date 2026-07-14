@@ -73,7 +73,7 @@
         "source": "github",
         "repo": "The-Focus-AI/google-skill"
       },
-      "version": "0.11.0",
+      "version": "0.12.0",
       "description": "Google services integration - Gmail, Calendar, Sheets, Docs, and YouTube"
     },
     {
